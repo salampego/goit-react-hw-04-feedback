@@ -1,0 +1,14 @@
+.container {
+  text-align: center;
+}
+
+.btn {
+  margin-right: 5px;
+}
+.btn:last-child {
+  margin-right: 0;
+}
+.list-feedback {
+  padding-left: 0;
+  list-style: none;
+}
