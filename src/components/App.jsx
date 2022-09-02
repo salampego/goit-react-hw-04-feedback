@@ -10,6 +10,7 @@ export function Feedback() {
   const [neutral, setNeutral] = useState(0);
   const [bad, setBad] = useState(0);
 
+  const feedback = { good, neutral, bad };
   const total = good + neutral + bad;
   const positivePercentage = Math.round((good / total) * 100);
 
@@ -37,7 +38,7 @@ export function Feedback() {
       <Section title={'Please leave feedback'}>
         <FeedbackOptions
           onLeaveFeedback={handleClickBtn}
-          options={Object.keys({ good, neutral, bad })}
+          options={Object.keys(feedback)}
         />
       </Section>
       <Section title={'Statistics'}>
