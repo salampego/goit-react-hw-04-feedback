@@ -16,7 +16,6 @@ export function Feedback() {
 
   const handleClickBtn = event => {
     const { name } = event.target;
-    // eslint-disable-next-line default-case
     switch (name) {
       case 'good':
         setGood(state => state + 1);
